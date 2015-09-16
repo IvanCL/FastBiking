@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ControlActivity"
+    android:background="@mipmap/ic_fondo">
+
+   <ImageView
+       android:id="@+id/imgProfile"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/newTrack"
+        android:text="Empezar nuevo ejercicio"
+        android:layout_width="wrap_content"
+        android:background="@drawable/ic_toggle_on"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imgProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/imgProfile"
+        android:layout_alignEnd="@+id/imgProfile" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trackList"
+        android:layout_below="@+id/newTrack"
+        android:layout_above="@+id/noteView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diario"
+        android:id="@+id/noteView"
+        android:background="@drawable/ic_toggle_on"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/pictureView"
+        android:layout_toStartOf="@+id/pictureView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fotos"
+        android:id="@+id/pictureView"
+        android:background="@drawable/ic_toggle_on"
+        android:layout_below="@+id/trackList"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapa"
+        android:id="@+id/mapView"
+        android:background="@drawable/ic_toggle_on"
+        android:layout_below="@+id/trackList"
+        android:layout_alignRight="@+id/trackList"
+        android:layout_alignEnd="@+id/trackList"
+        android:layout_toRightOf="@+id/pictureView"
+        android:layout_toEndOf="@+id/pictureView" />
+
+
+
+</RelativeLayout>

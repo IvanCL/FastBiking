@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FastBiking</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="title_activity_ruta">RutaActivity</string>
+    <string name="title_activity_diario_detalles">DiarioDetallesActivity</string>
+
+</resources>
